@@ -1,4 +1,9 @@
-import { replaceZAndVFromString, changeWord, truncate } from '../index';
+import {
+  replaceZAndVFromString,
+  changeWord,
+  truncate,
+  removeStrings,
+} from '../index';
 
 describe('Strings methods', () => {
   describe('replaceZAndVFromString()', () => {
@@ -13,6 +18,9 @@ describe('Strings methods', () => {
     it('returns correct string', () => {
       expect(changeWord('Hi Bohdan', 'Bohdan', 'John')).toStrictEqual(
         'Hi John'
+      );
+      expect(changeWord('Hi Bohdan hi', 'Bohdan', 'John')).toStrictEqual(
+        'Hi John hi'
       );
     });
   });
