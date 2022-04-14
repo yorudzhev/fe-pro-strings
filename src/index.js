@@ -24,5 +24,4 @@ export const changeWord = (string, word, newWord) => {};
  * @param {number} length
  * @returns {string}
  */
-export const truncate = (string, length) => string.slice(0, length);
-
+export const truncate = (string, length) => {};
