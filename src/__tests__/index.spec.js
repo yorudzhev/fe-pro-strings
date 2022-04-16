@@ -2,7 +2,6 @@ import {
   replaceZAndVFromString,
   changeWord,
   truncate,
-  removeStrings,
   quantityOfSymbols,
   quantityOfSymbolsWithIndexOf,
 } from '../index';
