@@ -3,6 +3,7 @@ import {
   quantityOfSymbols,
   replaceZAndVFromString,
   truncate,
+  quantityOfSymbolsWithIndexOf
 } from './index.js';
 
 const changedString = changeWord('my name bohdan and I', 'bohdan', 'vlad'); // Должно вернуть 'my name vlad and I'
@@ -22,6 +23,6 @@ const cycledSymbols = quantityOfSymbols('Test', 't');
 
 console.log(cycledSymbols); // вернет 2
 
-const cycledSymbolsIndexOf = quantityOfSymbols('Test', 't');
+const cycledSymbolsIndexOf = quantityOfSymbolsWithIndexOf('Test', 't');
 
 console.log(cycledSymbolsIndexOf); // вернет 2
