@@ -10,8 +10,8 @@ export const replaceZAndVFromString = (string) => {
     
     for (i of string) {
         if (i === targetZ) {     
-            string = string.slice(0, targetZ) + `*` + string.slice(targetZ);
-        } else if (i === targetV) {string = string.slice(0, targetV) + `*` + string.slice(targetV);}
+            string = string.slice(0, targetZ) + `*` + string.slice(targetZ + 1);
+        } else if (i === targetV) {string = string.slice(0, targetV) + `*` + string.slice(targetV + 1);}
     } 
 
     return string;
