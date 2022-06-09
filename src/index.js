@@ -5,6 +5,7 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {
+    string = string.toUpperCase();
     let targetZ = string.indexOf(`z`);
     let targetV = string.indexOf(`v`);
     
