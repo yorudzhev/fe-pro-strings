@@ -5,16 +5,12 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {
-    string = string.toUpperCase();
-    let targetZ = string.indexOf(`z`);
-    let targetV = string.indexOf(`v`);
-    
-    for (i of string) {
-        if (i === targetZ) {     
-            string = string.slice(0, targetZ) + `*` + string.slice(targetZ);
-        } else if (i === targetV) {string = string.slice(0, targetV) + `*` + string.slice(targetV);}
+    string = string.toLowerCase();
+    for (let i of string) {
+        if (i === `z`) {     
+            string = string.slice(0, string.indexOf[`z`]) + `*` + string.slice(0, string.indexOf[`z`]);
+        } else if (i === `v`) {string = string.slice(0, string.indexOf[`v`]) + `*` + string.slice(0, string.indexOf[`v`]);}
     } 
-
     return string;
 };
 
